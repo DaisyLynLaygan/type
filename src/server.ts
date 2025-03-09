@@ -4,7 +4,7 @@ import { usersRoutes } from './users/users.routes'
 import  errorHandler  from './_middleware/error-handler'
 
 const app = express()
-const port = process.env.PORT as unknown as number || 3000
+const port = process.env.PORT as unknown as number || 7000
 
 //middlewares
 app.use(express.json())
@@ -28,5 +28,5 @@ app.use(errorHandler)
 
 //start server
 app.listen(port, () => {
-    console.log(`Server started at http://localhost:3000`)
+    console.log(`Server started at http://localhost:7000`)
 })
